@@ -10,18 +10,14 @@
 
 <h2>Person list</h2>
 <div class="persons" ng-controller="PersonListController as persons">
-    <div class="person">
+    <!-- repeated element -->
+    <div class="person" ng-repeat="person in persons.list">
         <ul>
-            <li>{{persons.list[0].name}}</li>
-            <li>{{persons.list[0].age}}歲</li>
+            <li>{{person.name}}</li>
+            <li>{{person.age}}歲</li>
         </ul>
     </div>
-    <div class="person">
-        <ul>
-            <li>{{persons.list[1].name}}</li>
-            <li>{{persons.list[1].age}}歲</li>
-        </ul>
-    </div>
+
 </div>
 
 <script src="lib/angular.min.js"></script>
