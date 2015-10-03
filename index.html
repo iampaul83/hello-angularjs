@@ -8,6 +8,22 @@
 
 <h1>I AM PAUL{{ 80 + 3 }}</h1>
 
+<h2>Person list</h2>
+<div class="persons" ng-controller="PersonListController as persons">
+    <div class="person">
+        <ul>
+            <li>{{persons.list[0].name}}</li>
+            <li>{{persons.list[0].age}}歲</li>
+        </ul>
+    </div>
+    <div class="person">
+        <ul>
+            <li>{{persons.list[1].name}}</li>
+            <li>{{persons.list[1].age}}歲</li>
+        </ul>
+    </div>
+</div>
+
 <script src="lib/angular.min.js"></script>
 <script src="js/app.js"></script>
 </body>
