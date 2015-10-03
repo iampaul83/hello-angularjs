@@ -1,4 +1,6 @@
-var helloNg = angular.module(
-    "hello-ng", // ng-app
-    [] // module dependencies
-);
+(function() {
+    var helloNg = angular.module(
+        "hello-ng", // ng-app
+        [] // module dependencies
+    );
+})()
